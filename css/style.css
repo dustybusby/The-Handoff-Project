@@ -1,0 +1,531 @@
+/* Web Designer: Dusty Busby */
+
+/* Default styling for "Mobile First" approach */
+
+:root {
+    --primary-dark: #4A2409;
+    --primary-medium: #6B350E;
+    --accent-light: #40A2CE;
+    --accent-medium: #35667C;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--accent-medium);
+}
+
+body {
+    font-family: "Nunito", serif;
+    background: var(--white);
+}
+
+/* Header/Navigation Section */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(74,36,9, 1.0), rgba(74,36,9, 0.0)),
+				url(../img/header-photo.jpg) center / cover;
+    height: 100vh;
+	color: var(--white);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav img {
+    padding: 18px 0 26px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul a {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.masthead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.masthead h2 {
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--white);
+    margin: 0;
+    line-height: normal;
+}
+
+/* Title Section */
+
+.title {
+    display: block;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#title-text1 h2 {
+    font-weight: 600;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: var(--primary-medium);
+    margin: 0;
+    line-height: normal;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--primary-medium);
+}
+
+#title-text2 h2 {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--primary-medium);
+    margin: 0;
+    line-height: normal;
+}
+
+/* Main Content Section */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 24px;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+section img {
+    border-radius: 20px;
+    height: 328px;
+    width: 328px;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 328px;
+}
+
+section h2 {
+    font-weight: 700;
+    font-size: 29px;
+    color: var(--primary-medium);
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 34px;
+}
+
+section p {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--primary-medium);
+    hyphens: auto;
+    word-wrap: break-word;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+/* Drink/Food Menu Section */
+
+.menu-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 24px;
+    gap: 35px;
+}
+
+.menu-item {
+    height: 255px;
+    width: 328px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.drink-menu {
+    background-image: linear-gradient(rgba(74,36,9, 0.0), rgba(74,36,9, 1.0)),
+                    url('../img/drink-menu-photo.jpg');
+    background-size: 328px 112px, 328px 255px;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+}
+
+.food-menu {
+    background-image: linear-gradient(rgba(74,36,9, 0.0), rgba(74,36,9, 1.0)),
+                    url('../img/food-menu-photo.jpg');
+    background-size: 328px 112px, 328px 255px;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+}
+
+.menu-text {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--white);
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+/* Footer Section */
+
+footer {
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.footer-content {
+    border-top: 2px solid var(--primary-medium);
+    padding-top: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+    gap: 10px;
+}
+
+.contact-info p {
+    margin: 0 15px;
+    color: var(--primary-medium);
+    font-size: 22px;
+}
+
+.address {
+    font-weight: 800;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32.5px 10px;
+}
+
+.icon-placeholder {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.icon-placeholder.twitter { background-image: url('../img/icon-twitter.svg'); }
+.icon-placeholder.facebook { background-image: url('../img/icon-facebook.svg'); }
+.icon-placeholder.instagram { background-image: url('../img/icon-instagram.svg'); }
+
+.copyright {
+    color: var(--primary-medium);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Body Section */
+
+    body {
+        margin: 20px 60px;
+        min-height: calc(100vh - 40px);
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    /* Header/Navigation Section */
+
+    header {
+        margin: 0;
+        height: calc(100vh - 40px);
+        border-radius: 11px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 40px;
+    }
+
+    .masthead h2 {
+        font-size: 47px;
+    }
+
+    /* Title Section */
+
+    .title {
+        padding: 80px 0;
+    }
+
+    #title-text1 h2 {
+        font-size: 25px;
+    }
+
+    #title-text2 h2 {
+        font-size: 38px;
+    }
+
+    /* Main Content Section */
+
+    section {
+        flex-direction: row;
+        gap: 40px;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    section img {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .section-text {
+        align-items: flex-start;
+        text-align: left;
+        flex: 1;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        height: 328px;
+    }
+
+    section h2 {
+        font-size: 36px;
+        text-align: left;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+
+    section p {
+        font-size: 22px;
+        text-align: left;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+
+    /* Drink/Food Menu Section */
+
+    .menu-img {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    /* Footer Section */
+
+    .footer-content {
+        max-width: none;
+        margin: 0;
+        border-top: none;
+        padding: 40px 0;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -10px;
+        right: -10px;
+        height: 2px;
+        background-color: var(--primary-medium);
+        opacity: 0.4;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 0 44px;
+        gap: 0;
+        position: relative;
+    }
+
+    .contact-info p {
+        margin: 0;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        width: 33.33%;
+    }
+
+    .contact-info .address {
+        font-weight: 800;
+    }
+
+    .phone {
+        position: absolute;
+        left: 0;
+        order: 1;
+    }
+
+    .email {
+        position: absolute;
+        right: 0;
+        order: 3;
+    }
+
+    .address {
+        order: 2;
+    }
+
+    .contact-info h2 {
+        margin: 0;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        width: 33.33%;
+    }
+
+    .contact-info .address {
+        font-weight: 800;
+    }
+
+    .phone {
+        position: absolute;
+        left: 0;
+        order: 1;
+    }
+
+    .email {
+        position: absolute;
+        right: 0;
+        order: 3;
+    }
+
+    .address {
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 1284px) {
+
+    /* Main Content Section */
+
+    .container {
+        margin: 0 48px;
+    }
+
+    /* Drink/Food Menu Section */
+
+    .menu-img {
+        margin: 60px 48px;
+    }
+
+    .menu-item {
+        width: 500px;
+        height: 390px;
+    }
+
+    .drink-menu,
+    .food-menu {
+        background-size: 500px 170px, 500px 390px;
+    }
+
+    section img {
+        height: 390px;
+        width: 390px;
+    }
+
+    .section-text {
+        height: 390px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    /* Main Content Section */
+
+    .container {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
+    section {
+        gap: 80px;
+        margin-bottom: 60px;
+    }
+
+    /* Drink/Food Menu Section */
+
+    .menu-img {
+        max-width: 1440px;
+        margin: 80px auto;
+        gap: 60px;
+    }
+
+    /* Footer Section */
+
+    .contact-info {
+        gap: 60px;
+    }
+}
