@@ -3,6 +3,7 @@
 /* Default styling for "Mobile First" approach */
 
 :root {
+    /* Colors */
     --primary-dark: #4A2409;
     --primary-medium: #6B350E;
     --accent-light: #40A2CE;
