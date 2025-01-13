@@ -1,4 +1,4 @@
-/* Web Designer: Dusty Busby */
+/* Web Developer Dusty Busby */
 
 /* Default styling for "Mobile First" approach */
 
@@ -314,7 +314,7 @@ footer {
     border-radius: var(--radius-full);
 }
 
-.icon-placeholder.twitter { background-image: url('../img/icon-twitter.svg'); }
+.icon-placeholder.x { background-image: url('../img/icon-twitter.svg'); }
 .icon-placeholder.facebook { background-image: url('../img/icon-facebook.svg'); }
 .icon-placeholder.instagram { background-image: url('../img/icon-instagram.svg'); }
 
